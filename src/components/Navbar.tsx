@@ -9,9 +9,6 @@ export default function Navbar(){
             <b>Christian Jensen</b><br/>
             <i>Father. Husband. Brother. Patriot.</i>
         </a>
-        <Router>
-            <Route path='/' element={<Home/>}
-        </Router>
         <button
             className="navbar-toggler"
             type="button"
