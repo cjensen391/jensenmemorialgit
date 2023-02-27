@@ -1,7 +1,7 @@
-import React,{useState} from 'react';
+//import React,{useState} from 'react';
 //import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
 //import Home from "./Home";
-import Memorial from "./Memorial"
+//import Memorial from "./Memorial"
 export default function Navbar(){
     return <nav className="navbar object-left-top navbar-expand-sm  navbar-dark bg-dark">
         <a className="navbar-brand" href="src#">
