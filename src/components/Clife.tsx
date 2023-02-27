@@ -3,6 +3,7 @@ import church from '../media/church.jpeg';
 import golf from '../media/golf.jpeg'
 export default function Clife(){
     return <div>
+        <h1>Gallery</h1>
         <section className="dark:bg-gray-900">
             <div className="container px-2 py-5 mx-auto animate-pulse">
                 <h1 className="w-48 h-2 mx-auto bg-gray-200 rounded-lg dark:bg-gray-700">

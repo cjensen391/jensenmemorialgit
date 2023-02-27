@@ -1,9 +1,8 @@
 import React,{useState} from 'react';
-import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
-import Home from "./Home";
+//import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
+//import Home from "./Home";
 import Memorial from "./Memorial"
 export default function Navbar(){
-    const [choice,setChoice] =useState('Home')
     return <nav className="navbar object-left-top navbar-expand-sm  navbar-dark bg-dark">
         <a className="navbar-brand" href="src#">
             <b>Christian Jensen</b><br/>
@@ -28,12 +27,12 @@ export default function Navbar(){
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" onClick={()=>setChoice('Memorial')} href="src#memorial">
+                    <a className="nav-link">
                         Memorial
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" onClick={()=>setChoice('Where')}href="src#where">
+                    <a className="nav-link">
                         Where is it?
                     </a>
                 </li>
@@ -49,13 +48,13 @@ export default function Navbar(){
                         Photos
                     </a>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a className="dropdown-item" onClick={()=>setChoice('Child')} href="src#child">
+                        <a className="dropdown-item">
                             As A Child..
                         </a>
-                        <a className="dropdown-item" onClick={()=>setChoice('Military')}href="src#Military">
+                        <a className="dropdown-item" >
                             Military Life
                         </a>
-                        <a className="dropdown-item" onClick={()=> setChoice('Civilian')}href="src#Civilian">
+                        <a className="dropdown-item" >
                             Civilian Life
                         </a>
                     </div>
