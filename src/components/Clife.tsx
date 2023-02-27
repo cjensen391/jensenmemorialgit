@@ -1,6 +1,6 @@
 import React from 'react';
-import church from './media/church.jpeg';
-import golf from './media/golf.jpeg'
+import church from '../media/church.jpeg';
+import golf from '../media/golf.jpeg'
 export default function Clife(){
     return <div>
         <section className="dark:bg-gray-900">

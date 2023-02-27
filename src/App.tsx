@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './Navbar'
-import Home from './Home'
-import Gallery from './Clife'
+
+import {BrowserRouter,Route,Link} from "react-router-dom"
+import Navbar from './components/Navbar'
+import Home from './components/Home'
+import Gallery from './components/Clife'
+import Memorial from './components/Memorial'
 
 function App() {
     const [page, setPage] = useState('home')
@@ -11,9 +13,7 @@ function App() {
     <div className="App">
       <header className="App-header">
           <Navbar />
-          <div className='App-header'>
-          <Home />
-          </div>
+          <Gallery/>
       </header>
     </div>
   );

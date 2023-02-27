@@ -1,6 +1,6 @@
 import React from 'react';
-import golf from './media/golf.jpeg'
-import intro from './media/intro.jpeg'
+import golf from '../media/golf.jpeg'
+import intro from '../media/intro.jpeg'
 export default function Home(){
     return (
     <>
