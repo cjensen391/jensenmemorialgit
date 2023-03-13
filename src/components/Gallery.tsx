@@ -20,7 +20,7 @@ export default function Gallery(){
         {src:intro,width:600,height:600,onClick:{setOpen:true}}
     ];
     return <>
-        <PhotoAlbum layout='columns' photos={photos}/>
+        <PhotoAlbum layout='rows' photos={photos}/>
         <Lightbox
             open={open}
             close={() => setOpen(false)}
