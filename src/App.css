@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+img{
+  align-items:center;
+  max-height:1000vh;
+  justify-content:center;
+}
 
 .App-header {
   background-color: #282c34;

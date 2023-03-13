@@ -1,5 +1,5 @@
 import React from 'react';
-import intro from '../media/intro.jpeg'
+import intro from './media/intro.jpeg'
 export default function Home(){
     return (
     <>

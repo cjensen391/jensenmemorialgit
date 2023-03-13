@@ -1,5 +1,7 @@
 import React from 'react';
 
 export default function Where(){
-    return <div>Where is it?</div>
+    return <><h1>Where is it?</h1>
+        <div></div>
+    </>
 }

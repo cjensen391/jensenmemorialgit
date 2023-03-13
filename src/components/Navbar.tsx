@@ -1,7 +1,3 @@
-//import React,{useState} from 'react';
-//import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
-//import Home from "./Home";
-//import Memorial from "./Memorial"
 export default function Navbar(){
     return <nav className="navbar object-left-top navbar-expand-sm  navbar-dark bg-dark">
         <a className="navbar-brand" href="src#">
@@ -22,17 +18,17 @@ export default function Navbar(){
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
                 <li className="nav-item active">
-                    <a className="nav-link" href="src#">
+                    <a className="nav-link" href="/">
                         Home <span className="sr-only">(current)</span>
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link">
+                    <a className="nav-link" href="/memorial">
                         Memorial
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link">
+                    <a className="nav-link" href="/where">
                         Where is it?
                     </a>
                 </li>
@@ -54,7 +50,7 @@ export default function Navbar(){
                         <a className="dropdown-item" >
                             Military Life
                         </a>
-                        <a className="dropdown-item" >
+                        <a className="dropdown-item" href="/clife" >
                             Civilian Life
                         </a>
                     </div>
