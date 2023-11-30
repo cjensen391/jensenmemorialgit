@@ -13,11 +13,11 @@ import mariage1 from './media/mariage1.jpeg'
 export default function Gallery(){
     const[open,setOpen ] = React.useState(false)
     const photos = [
-        { src: golf, width: 600, height: 600, onClick:{setOpen:true} },
-        { src: church, width: 600, height: 900, onClick:{setOpen:true} },
-        { src:mariage1, width:700,height:1000,onClick:{setOpen:true}},
-        { src:baby,width:700,height:1000,onClick:{setOpen:true} },
-        {src:intro,width:600,height:600,onClick:{setOpen:true}}
+        { src: golf, width: 600, height: 600, onClick:() => {setOpen:true} },
+        { src: church, width: 600, height: 900, onClick:()=>{setOpen:true} },
+        { src:mariage1, width:700,height:1000,onClick:()=>{setOpen:true}},
+        { src:baby,width:700,height:1000,onClick:()=>{setOpen:true} },
+        {src:intro,width:600,height:600,onClick:()=>{setOpen:true}}
     ];
     return <>
         <PhotoAlbum layout='rows' photos={photos}/>
