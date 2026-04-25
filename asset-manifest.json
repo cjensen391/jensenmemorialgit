@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/jensenmemorialgit/static/css/main.1ee33bd0.css",
+    "main.js": "/jensenmemorialgit/static/js/main.2b15122d.js",
+    "static/js/787.ec664583.chunk.js": "/jensenmemorialgit/static/js/787.ec664583.chunk.js",
+    "static/media/IMG_2797.jpeg": "/jensenmemorialgit/static/media/IMG_2797.2f541d6737462158934c.jpeg",
+    "static/media/IMG_2779.jpeg": "/jensenmemorialgit/static/media/IMG_2779.97c0ea6561c13a54cf7a.jpeg",
+    "static/media/IMG_2781.jpeg": "/jensenmemorialgit/static/media/IMG_2781.6644423b04eda3710c95.jpeg",
+    "static/media/69820514013__E2560EBF-35EF-4DCE-B6F1-04DBB7F2FF0D.jpeg": "/jensenmemorialgit/static/media/69820514013__E2560EBF-35EF-4DCE-B6F1-04DBB7F2FF0D.7bbbe15664ac68367823.jpeg",
+    "static/media/IMG_2794.jpeg": "/jensenmemorialgit/static/media/IMG_2794.c0c0f68d4bd341e2b31d.jpeg",
+    "static/media/IMG_2793.jpeg": "/jensenmemorialgit/static/media/IMG_2793.fe5ac04119a3dc77fddc.jpeg",
+    "static/media/69820143520__C69F1B79-EA3F-4357-A932-1C97D56A404C.jpeg": "/jensenmemorialgit/static/media/69820143520__C69F1B79-EA3F-4357-A932-1C97D56A404C.b5851651de9df210a812.jpeg",
+    "static/media/IMG_2772.jpeg": "/jensenmemorialgit/static/media/IMG_2772.2c22b20abe36b72d4827.jpeg",
+    "static/media/IMG_2776.jpeg": "/jensenmemorialgit/static/media/IMG_2776.7cb2247a63965e3c867e.jpeg",
+    "static/media/intro.jpeg": "/jensenmemorialgit/static/media/intro.ded3ef090397d8002d39.jpeg",
+    "static/media/IMG_2782.jpeg": "/jensenmemorialgit/static/media/IMG_2782.148a98debd261eb2872a.jpeg",
+    "static/media/littleboy.jpeg": "/jensenmemorialgit/static/media/littleboy.03cade6a7484dad31958.jpeg",
+    "static/media/church.jpeg": "/jensenmemorialgit/static/media/church.be0eb0f3f3bc7c2c6e5b.jpeg",
+    "static/media/mariage1.jpeg": "/jensenmemorialgit/static/media/mariage1.b50b455eedb17523dbbc.jpeg",
+    "static/media/IMG_2769.jpeg": "/jensenmemorialgit/static/media/IMG_2769.4cb64cc6916a02507bd2.jpeg",
+    "static/media/golf.jpeg": "/jensenmemorialgit/static/media/golf.ce6fa9a6e39a0c7c9c50.jpeg",
+    "static/media/baby.jpeg": "/jensenmemorialgit/static/media/baby.e66b572da052dcca33b9.jpeg",
+    "static/media/mrwakenhut.jpeg": "/jensenmemorialgit/static/media/mrwakenhut.b7471387260cc4b8f741.jpeg",
+    "index.html": "/jensenmemorialgit/index.html",
+    "main.1ee33bd0.css.map": "/jensenmemorialgit/static/css/main.1ee33bd0.css.map",
+    "main.2b15122d.js.map": "/jensenmemorialgit/static/js/main.2b15122d.js.map",
+    "787.ec664583.chunk.js.map": "/jensenmemorialgit/static/js/787.ec664583.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ee33bd0.css",
+    "static/js/main.2b15122d.js"
+  ]
+}
