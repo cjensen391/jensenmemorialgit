@@ -205,6 +205,282 @@ main {
   box-shadow: 0 4px 24px rgba(0,0,0,0.5);
 }
 
+/* ── ATC Player ──────────────────────────────────────── */
+.atc-player {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: 4px;
+  padding: 1rem 1.25rem;
+}
+
+.atc-player__header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.atc-player__dot {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e74c3c;
+  animation: live-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes live-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.25; }
+}
+
+.atc-player__title {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.atc-player__msg {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ── Where ───────────────────────────────────────────── */
+.where-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .where-info-grid { grid-template-columns: 1fr; }
+}
+
+.where-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--gold);
+  border-radius: 4px;
+  padding: 1.25rem 1.5rem;
+}
+
+.where-card__heading {
+  font-family: var(--serif);
+  font-size: 1rem;
+  color: var(--gold);
+  margin: 0 0 1rem;
+  letter-spacing: 0.04em;
+}
+
+.where-card address {
+  font-style: normal;
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 0.85rem;
+}
+
+.where-card__detail {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+  line-height: 1.6;
+}
+
+.where-label {
+  display: inline-block;
+  min-width: 5rem;
+  font-weight: 500;
+  color: var(--text);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+}
+
+.where-directions__label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin: 0.85rem 0 0.25rem;
+}
+
+.where-directions__label:first-of-type { margin-top: 0; }
+
+.where-directions__text {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ── Memorial ────────────────────────────────────────── */
+.memorial-page {
+  padding: 0 1.5rem 4rem;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.memorial-hero {
+  text-align: center;
+  padding: 3rem 0 2.5rem;
+}
+
+.memorial-hero__name {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 600;
+  color: var(--gold);
+  margin: 0 0 0.4rem;
+}
+
+.memorial-hero__tagline {
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+.memorial-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .memorial-grid { grid-template-columns: 1fr; }
+}
+
+.memorial-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--gold);
+  border-radius: 4px;
+  padding: 1.5rem;
+}
+
+.memorial-card--full {
+  grid-column: 1 / -1;
+}
+
+.memorial-card__heading {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  color: var(--gold);
+  margin: 0 0 1.1rem;
+  letter-spacing: 0.04em;
+}
+
+.memorial-field {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: baseline;
+}
+
+.memorial-field:last-child { border-bottom: none; }
+
+.memorial-label {
+  flex-shrink: 0;
+  min-width: 5.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.memorial-value {
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.memorial-value--placeholder {
+  color: var(--border);
+  font-style: italic;
+}
+
+.memorial-bio {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+}
+
+.memorial-bio--placeholder {
+  color: var(--border);
+  font-style: italic;
+}
+
+.memorial-decorations {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.memorial-decoration {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.memorial-decoration:last-child {
+  border-bottom: none;
+}
+
+.memorial-decoration::before {
+  content: '★';
+  color: var(--gold);
+  font-size: 0.65rem;
+  flex-shrink: 0;
+}
+
+.memorial-inscription {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--gold-light);
+  line-height: 1.6;
+}
+
+/* ── ATC live badge (Gallery lightbox overlay) ───────── */
+.atc-live-badge {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(28, 43, 58, 0.92);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: 4px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  backdrop-filter: blur(6px);
+  pointer-events: none;
+}
+
 /* ── Bootstrap overrides ─────────────────────────────── */
 a { color: var(--gold); }
 a:hover { color: var(--gold-light); }
