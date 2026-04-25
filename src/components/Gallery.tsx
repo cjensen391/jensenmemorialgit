@@ -8,6 +8,16 @@ import { useAtcStream } from '../hooks/useAtcStream';
 
 type PhotoItem = { src: string; width: number; height: number };
 
+const decorations = [
+  'National Defense Medal',
+  'Vietnam Service Medal w/ 3 Bronze Stars',
+  'Vietnam Campaign Medal w/ 1960 Device',
+  '2 Overseas Bars',
+  'Sharpshooter Badge — M-16',
+  'Army Commendation Medal',
+  'Bronze Star Medal w/ 1 Oak Leaf Cluster',
+];
+
 const ctx = (require as any).context('./media', false, /\.(png|jpe?g|gif|webp)$/i);
 const mediaSrcs: string[] = ctx.keys().map((k: string) => {
   const mod = ctx(k);
@@ -67,7 +77,21 @@ export default function Gallery() {
 
   return (
     <div className="gallery-page">
-      <h2 className="gallery-page__heading">A Life in Photos</h2>
+      <div className="gallery-hero">
+        <p className="home-hero__eyebrow">In Honor &amp; Memory</p>
+        <h2 className="gallery-hero__name">A Life in Photos</h2>
+        <p className="home-hero__dates">July 15, 1944 &ndash; February 12, 2023</p>
+        <hr className="home-hero__divider" />
+        <p className="gallery-hero__tagline">Father &bull; Husband &bull; Brother &bull; Patriot</p>
+        <div className="gallery-medals">
+          {decorations.map(d => (
+            <span key={d} className="gallery-medal-chip">
+              <span className="gallery-medal-star">★</span>{d}
+            </span>
+          ))}
+        </div>
+      </div>
+
       <p className="gallery-page__sub">Click any photo to view</p>
 
       {streamUrl && <audio ref={audioRef} src={streamUrl} />}
