@@ -1,43 +1,210 @@
 .App {
-  text-align: center;
-}
-
-img{
-  align-items:center;
-  max-height:1000vh;
-  justify-content:center;
+  min-height: 100vh;
+  background-color: var(--bg);
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--bg);
   min-height: 100vh;
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px;
+  display: flex;
   flex-direction: column;
-  align-items: start;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Navbar ─────────────────────────────────────────── */
+.site-nav {
+  background-color: var(--surface) !important;
+  border-bottom: 2px solid var(--gold);
+  padding: 0.6rem 1.5rem;
+}
+
+.site-nav .navbar-brand {
+  font-family: var(--serif);
+  color: var(--gold) !important;
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+.site-nav .navbar-brand em {
+  display: block;
+  font-style: italic;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: var(--gold-light);
+  letter-spacing: 0.06em;
+}
+
+.site-nav .nav-link {
+  color: var(--text) !important;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.45rem 0.9rem !important;
+  transition: color 0.2s;
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus {
+  color: var(--gold) !important;
+}
+
+.site-nav .dropdown-menu {
+  background-color: var(--surface-2);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--gold);
+  border-radius: 0 0 4px 4px;
+  margin-top: 0;
+}
+
+.site-nav .dropdown-item {
+  color: var(--text);
+  font-size: 0.85rem;
+  padding: 0.45rem 1.25rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.site-nav .dropdown-item:hover {
+  background-color: var(--border);
+  color: var(--gold);
+}
+
+.site-nav .navbar-toggler {
+  border-color: var(--border);
+}
+
+.site-nav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(197,160,40,0.9)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ── Home ────────────────────────────────────────────── */
+.home-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  font-family:'Hevectica';
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 4rem 1.5rem 5rem;
+  text-align: center;
 }
 
-.Gallery {
-  background: #282c34;
-  flex-direction:row;
-  align-items:start;
-  justify-content:center;
-  font-family:'Hevectica';
-  font-size: calc(10px + 2vmin);
-  color: white;
+.home-hero__eyebrow {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.home-hero__name {
+  font-family: var(--serif);
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  font-weight: 600;
+  color: var(--gold);
+  margin: 0 0 0.5rem;
+  line-height: 1.15;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-hero__dates {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  margin-bottom: 2.5rem;
 }
+
+.home-hero__divider {
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  margin: 0 auto 2.5rem;
+  border: none;
+}
+
+.home-hero__portrait {
+  max-width: min(480px, 90vw);
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px var(--border);
+  margin-bottom: 2rem;
+}
+
+.home-hero__tagline {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* ── Gallery ─────────────────────────────────────────── */
+.gallery-page {
+  padding: 2.5rem 1rem 4rem;
+}
+
+.gallery-page__heading {
+  font-family: var(--serif);
+  font-size: 1.75rem;
+  color: var(--gold);
+  text-align: center;
+  margin-bottom: 0.35rem;
+}
+
+.gallery-page__sub {
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+/* ── Where ───────────────────────────────────────────── */
+.where-page {
+  padding: 3rem 1.5rem 4rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.where-page h1 {
+  font-family: var(--serif);
+  color: var(--gold);
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.where-page .lead {
+  color: var(--text);
+  font-weight: 300;
+}
+
+.where-page address {
+  font-style: normal;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+}
+
+.where-page .map-wrap {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+}
+
+/* ── Bootstrap overrides ─────────────────────────────── */
+a { color: var(--gold); }
+a:hover { color: var(--gold-light); }

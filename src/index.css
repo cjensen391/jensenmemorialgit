@@ -1,11 +1,28 @@
-body {
-  margin: 0;
-  font-family:'Helvetica Neue';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --bg:          #0f1923;
+  --surface:     #1c2b3a;
+  --surface-2:   #243447;
+  --gold:        #c5a028;
+  --gold-light:  #e8d5a3;
+  --text:        #f0ede6;
+  --text-muted:  #8a9bb0;
+  --border:      #2d3f52;
+  --serif:       'Playfair Display', Georgia, serif;
+  --sans:        'Inter', 'Helvetica Neue', sans-serif;
 }
 
-code {
-  font-family:'Hevetica',
-    monospace;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

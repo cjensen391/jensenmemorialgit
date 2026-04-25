@@ -20,7 +20,7 @@ function App() {
                       <Route path='/' element={<Home />}/>
                       <Route path='/where' element={<Where />}/>
                       <Route path='/memorial' element={<Memorial />}/>
-                      <Route path='/clife' element={<Gallery />}/>
+                      <Route path='/photos' element={<Gallery />}/>
                   </Routes>
               </main>
           </BrowserRouter>
